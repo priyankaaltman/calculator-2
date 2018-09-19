@@ -1,52 +1,53 @@
 """Math functions for calculator."""
 
 
-def add(num1, num2):
+def add(input):
     """Return the sum of the two inputs."""
 
-    return num1 + num2
+    return input[0] + input[1]
 
-def subtract(num1, num2):
+def subtract(input):
     """Return the second number subtracted from the first."""
 
-    return num1 - num2
+    return input[0] - input[1]
 
-def multiply(num1, num2):
+def multiply(input):
     """Multiply the two inputs together."""
 
-    return num1 * num2
+    return input[0] * input[1]
 
-def divide(num1, num2):
+def divide(input):
     """Divide the first input by the second and return the result."""
 
-    return num1 / num2
+    return input[0] / input[1]
 
-def square(num1):
+def square(input):
     """Return the square of the input."""
 
-    return num1**2
+    return input[0]**2
 
-def cube(num1):
+def cube(input):
     """Return the cube of the input."""
 
-    return num1**3
+    return input[0]**3
 
-def power(num1, num2):
-    """Raise num1 to the power of num2 and return the value."""
+def power(input):
+    """Raise input[0] to the power of input[1] and return the value."""
 
-    return num1**num2
+    return input[0]**input[1]
 
-def mod(num1, num2):
-    """Return the remainder of num1 / num2."""
+def mod(input):
+    """Return the remainder of input[0] / input[1]."""
 
-    return num1 % num2
+    return input[0] % input[1]
 
-def add_mult(num1, num2, num3):
+def add_mult(input):
     """Return the sum of the first two numbers multiplied by the third number."""
 
-    return (num1 + num2) * num3
+    return (input[0] + input[1]) * input[2]
 
-def add_cubes(num1, num2):
+def add_cubes(input):
     """Return the sum of two cubes."""
 
-    return num1**3 + num2**3
+    return input[0]**3 + input[1]**3
+    
