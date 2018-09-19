@@ -16,32 +16,30 @@ def main():
 
         operation, num1 = tokens[0], float(tokens[1])
 
-        if len(tokens) >= 3:
-            num2 = float(tokens[2])
-
-        if len(tokens) == 4:
-            num3 = float(tokens[3])
+        float_list = []
+        for item in tokens[1:]:
+            float_list.append(float(item))
 
         if operation == "+":
-            print(add(num1, num2))
+            print(add(float_list))
         elif operation == "-":
-            print(subtract(num1, num2))
+            print(subtract(float_list))
         elif operation == "*":
-            print(multiply(num1, num2))
+            print(multiply(float_list))
         elif operation == "/":
-            print(divide(num1, num2))
+            print(divide(float_list))
         elif operation == "square":
-            print(square(num1))
+            print(square(float_list))
         elif operation == "cube":
-            print(cube(num1))
+            print(cube(float_list))
         elif operation == "pow":
-            print(power(num1, num2))
+            print(power(float_list))
         elif operation == "mod":
-            print(mod(num1, num2))
+            print(mod(float_list))
         elif operation == "mult+":
-            print(add_mult(num1, num2, num3))
+            print(add_mult(float_list))
         elif operation == "cubes+":
-            print(add_cubes(num1, num2))
+            print(add_cubes(float_list))
 
 if __name__ == '__main__':
     main()
