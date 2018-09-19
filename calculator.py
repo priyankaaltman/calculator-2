@@ -6,16 +6,13 @@ calculator program yourself in this file.
 
 from arithmetic import *
 
-exit = False
-while exit == False:
-    selection =input("Enter a computation: ")
-    tokens = selection.split(" ")
+while True:
+    tokens = input("Enter a computation: ").split(" ")
 
     operation = tokens[0]
     if operation == "q" or operation == "quit":
-        exit = True
         print("Exiting...")
-        continue
+        break
 
     num1 = float(tokens[1])
 
